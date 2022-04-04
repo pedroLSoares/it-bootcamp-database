@@ -34,3 +34,12 @@ SELECT * FROM actors WHERE name LIKE 'Sam%';
 
 -- ➔ Mostrar o título dos filmes que saíram entre 2004 e 2008.
 SELECT title FROM movies WHERE release_date BETWEEN '2004-01-01' AND '2018-12-31';
+
+-- ➔ Mostrar o título dos filmes com classificação superior a 3, com mais de 1 prêmio e
+-- com data de lançamento entre 1988 e 2009. Ordenar os resultados por
+-- classificação.
+SELECT title FROM movies
+WHERE rating > 3
+  AND awards > 1
+  AND release_date BETWEEN '1988-01-01' AND '2009-12-31'
+ORDER BY rating;
