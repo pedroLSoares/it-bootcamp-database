@@ -1,0 +1,9 @@
+version: '3'
+services:
+  postgres:
+    build: .
+    image: bootcamp-postgres-exercise-2
+    environment:
+      POSTGRES_PASSWORD: admin
+    ports:
+      - 5432:5432
