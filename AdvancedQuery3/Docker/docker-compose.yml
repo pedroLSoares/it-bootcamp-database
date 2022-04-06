@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mysql:
+    build: .
+    image: bootcamp-mysql-exercise-3
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: library_exercise
+    ports:
+      - 3306:3306
